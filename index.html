@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Turnos Farmacia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #003366;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 60%;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px 20px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background: #0074b8;
+      color: white;
+      text-transform: uppercase;
+    }
+    tr:hover {
+      background: #f1f1f1;
+    }
+    .nota {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+    }
+
+    /* --- ESTILOS PARA EL LABEL --- */
+    #turnos-cola {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 10px 0 20px 0;
+      padding: 8px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      color: white;
+    }
+
+    .verde {
+      background: #28a745;
+    }
+    .amarillo {
+      background: #ffc107;
+      color: black;
+    }
+    .naranja {
+      background: #fd7e14;
+      animation: parpadeo 1s infinite;
+    }
+    .rojo {
+      background: #dc3545;
+      animation: parpadeo-rapido 0.5s infinite;
+    }
+
+    @keyframes parpadeo {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
+    @keyframes parpadeo-rapido {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Datos en tiempo real - Farmacia Campín</h1>
+
+  <!-- 👇 Aquí aparece el label dinámico -->
+  <div id="turnos-cola">Turnos en cola: 0</div>
+
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>Área</th>
+        <th>Espera</th>
+        <th>Atención</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <p class="nota">⚠️ La página de YNEXT solo permite visualizar hasta <b>50 turnos</b> a la vez.  
+  Si existen más de 50 turnos, los adicionales no serán visibles.</p>
+
+  <script>
+    async function cargarDatos() {
+      try {
+        const response = await fetch("https://defaultc3c0fc1c113943da89a2ba6dd28fd7.2e.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/5daaed363246431ea754cf7f242b6777/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=E6m6ADfy2YQjKRdyekJmaHP5OyyQJiMgtkCwXPEIUpw", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({})
+        });
+
+        if (!response.ok) {
+          throw new Error("Error en la petición: " + response.statusText);
+        }
+
+        const data = await response.json();
+        console.log(data);
+
+        const tbody = document.querySelector("#data-table tbody");
+        tbody.innerHTML = "";
+
+        // recorrer claves (G, H, AE, total)
+        Object.keys(data).forEach(key => {
+          if (data[key].espera !== undefined) {
+            const row = `
+              <tr>
+                <td><b>${key}</b></td>
+                <td>${data[key].espera}</td>
+                <td>${data[key].atencion}</td>
+              </tr>
+            `;
+            tbody.innerHTML += row;
+          }
+        });
+
+        // 👇 Actualizar el label de turnos en cola
+        if (data.total && data.total.cola !== undefined) {
+          const cola = data.total.cola;
+          const label = document.getElementById("turnos-cola");
+          label.textContent = `Turnos en cola: ${cola}`;
+
+          // limpiar clases anteriores
+          label.className = "";
+          if (cola <= 20) {
+            label.classList.add("verde");
+          } else if (cola >= 21 && cola <= 39) {
+            label.classList.add("amarillo");
+          } else if (cola >= 40 && cola <= 54) {
+            label.classList.add("naranja");
+          } else if (cola >= 55) {
+            label.classList.add("rojo");
+          }
+        }
+
+      } catch (error) {
+        console.error(error);
+        document.querySelector("#data-table tbody").innerHTML = "<tr><td colspan='3'>❌ Error al cargar datos</td></tr>";
+      }
+    }
+
+    // cargar al inicio
+    cargarDatos();
+
+    // refrescar cada 3 segundos
+    setInterval(cargarDatos, 3000);
+  </script>
+</body>
+</html>
