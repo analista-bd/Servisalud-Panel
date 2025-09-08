@@ -2,25 +2,155 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Turnos Farmacia</title>
+  <title>Panel de Turnos</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
       text-align: center;
-      padding: 30px;
     }
+
     h1 {
       color: #003366;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
+
+    /* --- BOTONES PRINCIPALES --- */
+    .main-options {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+    .main-options button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #00b3b3;
+      color: white;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .main-options button:hover {
+      background: #008080;
+      transform: scale(1.05);
+    }
+    .main-options button.active {
+      background: #003366;
+    }
+
+    /* --- TABS POR SEDE --- */
+    .tabs {
+      display: none;
+      margin-bottom: 20px;
+    }
+    .tabs.active {
+      display: block;
+    }
+    .tab-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .tab-buttons button {
+      padding: 8px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #eaeaea;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .tab-buttons button:hover {
+      background: #92d6cf;
+      transform: scale(1.05);
+    }
+    .tab-buttons button.active {
+      background: #00b3b3;
+      color: white;
+    }
+
+    /* --- CONTENIDO --- */
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    /* --- BREADCRUMB CON TURNO --- */
+    .breadcrumb-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb {
+      background: #f2f2f2;
+      color: #003366;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+    .turnos-label {
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      background-color: #00b3b3;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      transition: background 0.3s, transform 0.3s, opacity 0.3s;
+    }
+    .turnos-label.amarillo { background-color: #ffc107; color: #333; }
+    .turnos-label.naranja { background-color: #ff9800; }
+    .turnos-label.rojo { background-color: #dc3545; }
+
+    /* Animación de parpadeo */
+    .animate {
+      animation: parpadeo 0.5s;
+    }
+    @keyframes parpadeo {
+      0% { opacity: 1; }
+      50% { opacity: 0.2; }
+      100% { opacity: 1; }
+    }
+
+    /* --- SELECT PISO --- */
+    .piso-select {
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    /* --- TABLA --- */
     table {
-      margin: 20px auto;
       border-collapse: collapse;
-      width: 60%;
+      width: 500px;
+      max-width: 90%;
       background: white;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       border-radius: 10px;
       overflow: hidden;
+      margin-bottom: 20px;
     }
     th, td {
       padding: 12px 20px;
@@ -35,136 +165,320 @@
     tr:hover {
       background: #f1f1f1;
     }
+
+    /* NOTA */
     .nota {
       margin-top: 15px;
       font-size: 14px;
       color: #555;
       font-style: italic;
     }
-
-    /* --- ESTILOS PARA EL LABEL --- */
-    #turnos-cola {
-      font-size: 22px;
-      font-weight: bold;
-      margin: 10px 0 20px 0;
-      padding: 8px 20px;
-      border-radius: 10px;
-      display: inline-block;
-      color: white;
-    }
-
-    .verde {
-      background: #28a745;
-    }
-    .amarillo {
-      background: #ffc107;
-      color: black;
-    }
-    .naranja {
-      background: #fd7e14;
-      animation: parpadeo 1s infinite;
-    }
-    .rojo {
-      background: #dc3545;
-      animation: parpadeo-rapido 0.5s infinite;
-    }
-
-    @keyframes parpadeo {
-      0%, 50%, 100% { opacity: 1; }
-      25%, 75% { opacity: 0; }
-    }
-
-    @keyframes parpadeo-rapido {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
   </style>
 </head>
 <body>
-  <h1>📊 Datos en tiempo real - Farmacia Campín</h1>
+  <h1>📊 Panel de Turnos</h1>
 
-  <!-- 👇 Aquí aparece el label dinámico -->
-  <div id="turnos-cola">Turnos en cola: 0</div>
+  <!-- OPCIONES PRINCIPALES -->
+  <div class="main-options">
+    <button onclick="mostrarTabs('farmacia')" id="btn-farmacia">Farmacia</button>
+    <button onclick="mostrarTabs('usuario')" id="btn-usuario">Atención al Usuario</button>
+  </div>
 
-  <table id="data-table">
-    <thead>
-      <tr>
-        <th>Área</th>
-        <th>Espera</th>
-        <th>Atención</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+  <!-- TABS FARMACIA -->
+  <div id="tabs-farmacia" class="tabs">
+    <div class="tab-buttons">
+      <button onclick="mostrarTabla('116','farmacia')">116</button>
+      <button onclick="mostrarTabla('Campín','farmacia')">Campín</button>
+      <button onclick="mostrarTabla('Kennedy','farmacia')">Kennedy</button>
+      <button onclick="mostrarTabla('Occidente','farmacia')">Occidente</button>
+    </div>
+    <div class="content-wrapper">
+      <div>
+        <div class="breadcrumb-wrapper">
+          <p id="sede-actual-farmacia" class="breadcrumb">🏢 Selecciona una sede</p>
+          <p id="turnos-label-farmacia" class="turnos-label">Turnos en cola: 0</p>
+        </div>
+        <table id="data-table-farmacia">
+          <thead>
+            <tr>
+              <th>Área</th>
+              <th>Espera</th>
+              <th>Atención</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="3">Selecciona una sede</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS USUARIO -->
+  <div id="tabs-usuario" class="tabs">
+    <div class="tab-buttons">
+      <button onclick="mostrarTabla('116','usuario')">116</button>
+      <button onclick="mostrarTabla('Campín','usuario')">Campín</button>
+      <button onclick="mostrarTabla('Kennedy','usuario')">Kennedy</button>
+      <button onclick="mostrarTabla('Occidente','usuario')">Occidente</button>
+    </div>
+    <div class="content-wrapper">
+      <div>
+        <div class="breadcrumb-wrapper">
+          <p id="sede-actual-usuario" class="breadcrumb">🏢 Selecciona una sede</p>
+          <span id="turnos-label-usuario" class="turnos-label">Turnos en cola: 0</span>
+          <span id="piso-wrapper" style="display:none;">
+            | <select id="select-piso-usuario" class="piso-select" onchange="actualizarBreadcrumb()">
+              <option value="Sin selección">Selecciona piso</option>
+              <option value="1">Piso 1</option>
+              <option value="2">Piso 2</option>
+              <option value="3">Piso 3</option>
+              <option value="4">Piso 4</option>
+              <option value="5">Piso 5</option>
+              <option value="6">Piso 6</option>
+            </select>
+          </span>
+        </div>
+        <table id="data-table-usuario">
+          <thead>
+            <tr>
+              <th>Área</th>
+              <th>Espera</th>
+              <th>Atención</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="3">Selecciona una sede</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 
   <p class="nota">⚠️ La página de YNEXT solo permite visualizar hasta <b>50 turnos</b> a la vez.  
-  Si existen más de 50 turnos, los adicionales no serán visibles.</p>
+  Los adicionales no serán visibles.</p>
 
   <script>
-    async function cargarDatos() {
-      try {
-        const response = await fetch("https://defaultc3c0fc1c113943da89a2ba6dd28fd7.2e.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/5daaed363246431ea754cf7f242b6777/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=E6m6ADfy2YQjKRdyekJmaHP5OyyQJiMgtkCwXPEIUpw", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({})
-        });
+/* -------------------------
+   Configuración / globals
+   ------------------------- */
+var sedeActualUsuario = '';
+var intervalId = null; // para evitar múltiples intervalos
+var powerAutomateUrl = "https://defaultc3c0fc1c113943da89a2ba6dd28fd7.2e.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/5daaed363246431ea754cf7f242b6777/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=E6m6ADfy2YQjKRdyekJmaHP5OyyQJiMgtkCwXPEIUpw";
 
-        if (!response.ok) {
-          throw new Error("Error en la petición: " + response.statusText);
+/* -------------------------
+   Helpers
+   ------------------------- */
+// Normaliza un string: quita tildes, espacios y lo deja en minúsculas
+function normalizeStr(s) {
+  if (s === null || s === undefined) return "";
+  try {
+    return s.toString()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '') // quita diacríticos
+            .replace(/\s+/g, '')             // quita espacios
+            .toLowerCase();
+  } catch (e) {
+    return s.toString().replace(/\s+/g, '').toLowerCase();
+  }
+}
+
+// Busca la clave correspondiente en los datos (soporta "Campín" <-> "Campin")
+function findSedeKeyInData(sede, data) {
+  if (!sede || !data) return null;
+  // primer intento: coincidencia exacta
+  if (data.hasOwnProperty(sede)) return sede;
+
+  // si no, compara normalizando
+  var norm = normalizeStr(sede);
+  for (var k in data) {
+    if (!data.hasOwnProperty(k)) continue;
+    if (normalizeStr(k) === norm) return k;
+  }
+  return null;
+}
+
+/* -------------------------
+   UI helpers
+   ------------------------- */
+function resetearBreadcrumbs() {
+  // Reset farmacia
+  var el = document.getElementById("sede-actual-farmacia");
+  if (el) el.textContent = "🏢 Selecciona una sede";
+  var labF = document.getElementById("turnos-label-farmacia");
+  if (labF) labF.textContent = "Turnos en cola: 0";
+  var tbf = document.querySelector("#data-table-farmacia tbody");
+  if (tbf) tbf.innerHTML = "<tr><td colspan='3'>Selecciona una sede</td></tr>";
+
+  // Reset usuario
+  var el2 = document.getElementById("sede-actual-usuario");
+  if (el2) el2.textContent = "🏢 Selecciona una sede";
+  var labU = document.getElementById("turnos-label-usuario");
+  if (labU) labU.textContent = "Turnos en cola: 0";
+  var tbu = document.querySelector("#data-table-usuario tbody");
+  if (tbu) tbu.innerHTML = "<tr><td colspan='3'>Selecciona una sede</td></tr>";
+
+  var pw = document.getElementById("piso-wrapper");
+  if (pw) pw.style.display = "none";
+  var sp = document.getElementById("select-piso-usuario");
+  if (sp) sp.value = "Sin selección";
+
+  sedeActualUsuario = "";
+}
+
+function mostrarTabs(tipo) {
+  resetearBreadcrumbs();
+
+  var tf = document.getElementById("tabs-farmacia");
+  var tu = document.getElementById("tabs-usuario");
+  var bf = document.getElementById("btn-farmacia");
+  var bu = document.getElementById("btn-usuario");
+
+  if (tf) tf.classList.remove("active");
+  if (tu) tu.classList.remove("active");
+  if (bf) bf.classList.remove("active");
+  if (bu) bu.classList.remove("active");
+
+  if (tipo === 'farmacia') {
+    if (tf) tf.classList.add("active");
+    if (bf) bf.classList.add("active");
+  } else {
+    if (tu) tu.classList.add("active");
+    if (bu) bu.classList.add("active");
+  }
+}
+
+/* -------------------------
+   Petición a Power Automate
+   ------------------------- */
+async function fetchFromPowerAutomate() {
+  try {
+    const resp = await fetch(powerAutomateUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({})
+    });
+
+    if (!resp.ok) {
+      throw new Error("Error en la petición: " + resp.status + " " + resp.statusText);
+    }
+
+    const json = await resp.json();
+    return json;
+  } catch (err) {
+    console.error("fetchFromPowerAutomate:", err);
+    throw err;
+  }
+}
+
+/* -------------------------
+   Carga y renderizado de datos
+   ------------------------- */
+async function cargarDatos(tablaId, labelId, sede) {
+  try {
+    // Obtener datos desde PowerAutomate
+    const data = await fetchFromPowerAutomate();
+
+    // Buscar clave de sede dentro del JSON (maneja acentos/espacios)
+    var sedeKey = findSedeKeyInData(sede, data);
+    if (!sedeKey) {
+      // Si no encontró la sede, mostrar mensaje en tabla
+      var tbodyNo = document.querySelector(`#${tablaId} tbody`);
+      if (tbodyNo) tbodyNo.innerHTML = "<tr><td colspan='3'>❌ No hay datos para esta sede</td></tr>";
+      return;
+    }
+
+    var sedeData = data[sedeKey];
+    var tbody = document.querySelector(`#${tablaId} tbody`);
+    if (!tbody) return;
+    tbody.innerHTML = "";
+
+    // Recorremos las claves de la sede (ej G,H,AE) y evitamos la clave "total"
+    Object.keys(sedeData).forEach(function(key) {
+      if (key === "total") return; // omitimos fila total en el detalle
+      var item = sedeData[key];
+      if (item && typeof item === "object" && item.espera !== undefined) {
+        var row = "<tr>" +
+                  "<td><b>" + key + "</b></td>" +
+                  "<td>" + (item.espera != null ? item.espera : "") + "</td>" +
+                  "<td>" + (item.atencion != null ? item.atencion : "") + "</td>" +
+                  "</tr>";
+        tbody.innerHTML += row;
+      }
+    });
+
+    // Actualizar label de turnos con animación (tomamos sedeData.total.cola)
+    if (sedeData.total && sedeData.total.cola !== undefined) {
+      var cola = sedeData.total.cola;
+      var label = document.getElementById(labelId);
+      if (label) {
+        label.textContent = "Turnos en cola: " + cola;
+        // reset de clases (dejamos la base 'turnos-label')
+        label.className = "turnos-label";
+        if (cola <= 20) {
+          // mantener fondo por defecto (no necesita clase adicional)
+        } else if (cola <= 39) {
+          label.classList.add("amarillo");
+        } else if (cola <= 54) {
+          label.classList.add("naranja");
+        } else {
+          label.classList.add("rojo");
         }
-
-        const data = await response.json();
-        console.log(data);
-
-        const tbody = document.querySelector("#data-table tbody");
-        tbody.innerHTML = "";
-
-        // recorrer claves (G, H, AE, total)
-        Object.keys(data).forEach(key => {
-          if (data[key].espera !== undefined) {
-            const row = `
-              <tr>
-                <td><b>${key}</b></td>
-                <td>${data[key].espera}</td>
-                <td>${data[key].atencion}</td>
-              </tr>
-            `;
-            tbody.innerHTML += row;
-          }
-        });
-
-        // 👇 Actualizar el label de turnos en cola
-        if (data.total && data.total.cola !== undefined) {
-          const cola = data.total.cola;
-          const label = document.getElementById("turnos-cola");
-          label.textContent = `Turnos en cola: ${cola}`;
-
-          // limpiar clases anteriores
-          label.className = "";
-          if (cola <= 20) {
-            label.classList.add("verde");
-          } else if (cola >= 21 && cola <= 39) {
-            label.classList.add("amarillo");
-          } else if (cola >= 40 && cola <= 54) {
-            label.classList.add("naranja");
-          } else if (cola >= 55) {
-            label.classList.add("rojo");
-          }
-        }
-
-      } catch (error) {
-        console.error(error);
-        document.querySelector("#data-table tbody").innerHTML = "<tr><td colspan='3'>❌ Error al cargar datos</td></tr>";
+        // animación breve
+        label.classList.add("animate");
+        setTimeout(function(){ label.classList.remove("animate"); }, 500);
       }
     }
 
-    // cargar al inicio
-    cargarDatos();
+  } catch (error) {
+    console.error("cargarDatos:", error);
+    var tbodyErr = document.querySelector(`#${tablaId} tbody`);
+    if (tbodyErr) tbodyErr.innerHTML = "<tr><td colspan='3'>❌ Error al cargar datos</td></tr>";
+  }
+}
 
-    // refrescar cada 3 segundos
-    setInterval(cargarDatos, 3000);
-  </script>
+/* -------------------------
+   Mostrar tabla / control de timer
+   ------------------------- */
+function mostrarTabla(sede, tipo) {
+  var tablaId = tipo === "farmacia" ? "data-table-farmacia" : "data-table-usuario";
+  var labelId = tipo === "farmacia" ? "turnos-label-farmacia" : "turnos-label-usuario";
+  var sedeLabelId = tipo === "farmacia" ? "sede-actual-farmacia" : "sede-actual-usuario";
+
+  var sedeLabelEl = document.getElementById(sedeLabelId);
+  if (sedeLabelEl) sedeLabelEl.textContent = "🏢 " + (tipo === 'farmacia' ? 'Farmacia' : 'Atención al Usuario') + " > Sede " + sede;
+
+  if (tipo === 'usuario') {
+    sedeActualUsuario = sede;
+    var pw = document.getElementById('piso-wrapper');
+    if (pw) pw.style.display = 'inline-block';
+  }
+
+  // limpiar intervalos anteriores
+  if (intervalId) {
+    clearInterval(intervalId);
+    intervalId = null;
+  }
+
+  // carga inicial y programada
+  cargarDatos(tablaId, labelId, sede);
+  intervalId = setInterval(function() { cargarDatos(tablaId, labelId, sede); }, 5000);
+}
+
+/* -------------------------
+   Breadcrumb piso
+   ------------------------- */
+function actualizarBreadcrumb() {
+  var piso = document.getElementById('select-piso-usuario').value;
+  var target = document.getElementById('sede-actual-usuario');
+  if (!target) return;
+  if (piso === "Sin selección") {
+    target.textContent = "🏢 Atención al Usuario > Sede " + sedeActualUsuario;
+  } else {
+    target.textContent = "🏢 Atención al Usuario > Sede " + sedeActualUsuario + " | Piso " + piso;
+  }
+}
+</script>
+
 </body>
 </html>
