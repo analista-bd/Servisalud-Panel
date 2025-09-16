@@ -264,7 +264,7 @@
    ------------------------- */
 var sedeActualUsuario = '';
 var intervalId = null; // para evitar múltiples intervalos
-var powerAutomateUrl = "https://defaultc3c0fc1c113943da89a2ba6dd28fd7.2e.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/5daaed363246431ea754cf7f242b6777/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=E6m6ADfy2YQjKRdyekJmaHP5OyyQJiMgtkCwXPEIUpw";
+var githubJsonUrl = "https://analista-bd.github.io/Servisalud-Panel/data/farmacia.json";
 
 /* -------------------------
    Helpers
@@ -349,27 +349,22 @@ function mostrarTabs(tipo) {
 }
 
 /* -------------------------
-   Petición a Power Automate
+   Petición al JSON publicado en GitHub
    ------------------------- */
-async function fetchFromPowerAutomate() {
+async function fetchFromGitHub() {
   try {
-    const resp = await fetch(powerAutomateUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({})
-    });
-
+    const resp = await fetch(githubJsonUrl, { cache: "no-store" }); // no usar cache
     if (!resp.ok) {
-      throw new Error("Error en la petición: " + resp.status + " " + resp.statusText);
+      throw new Error("Error al obtener JSON: " + resp.status + " " + resp.statusText);
     }
-
     const json = await resp.json();
     return json;
   } catch (err) {
-    console.error("fetchFromPowerAutomate:", err);
+    console.error("fetchFromGitHub:", err);
     throw err;
   }
 }
+
 
 /* -------------------------
    Carga y renderizado de datos
@@ -377,7 +372,7 @@ async function fetchFromPowerAutomate() {
 async function cargarDatos(tablaId, labelId, sede) {
   try {
     // Obtener datos desde PowerAutomate
-    const data = await fetchFromPowerAutomate();
+    const data = await fetchFromGitHub();
 
     // Buscar clave de sede dentro del JSON (maneja acentos/espacios)
     var sedeKey = findSedeKeyInData(sede, data);
