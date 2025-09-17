@@ -6,7 +6,7 @@
         },
         "H": {
             "espera": 21,
-            "atencion": 6
+            "atencion": 5
         },
         "AE": {
             "espera": 7,
@@ -14,61 +14,61 @@
         },
         "total": {
             "espera": 40,
-            "atencion": 10,
-            "cola": 50,
-            "timestamp": "2025-09-17 12:16:03"
+            "atencion": 9,
+            "cola": 49,
+            "timestamp": "2025-09-17 12:18:00"
         }
     },
     "Campin": {
         "G": {
-            "espera": 6,
-            "atencion": 4
+            "espera": 7,
+            "atencion": 2
         },
         "H": {
             "espera": 8,
-            "atencion": 3
+            "atencion": 2
         },
         "AE": {
             "espera": 7,
             "atencion": 2
         },
         "total": {
-            "espera": 21,
-            "atencion": 9,
+            "espera": 22,
+            "atencion": 6,
             "cola": 28,
-            "timestamp": "2025-09-17 12:16:03"
+            "timestamp": "2025-09-17 12:18:00"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 7,
+            "espera": 8,
             "atencion": 1
         },
         "M": {
-            "espera": 9,
+            "espera": 8,
             "atencion": 1
         },
         "total": {
             "espera": 16,
             "atencion": 2,
-            "cola": 20,
-            "timestamp": "2025-09-17 12:16:03"
+            "cola": 19,
+            "timestamp": "2025-09-17 12:18:00"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 4,
-            "atencion": 1
+            "espera": 3,
+            "atencion": 2
         },
         "H": {
             "espera": 14,
-            "atencion": 2
+            "atencion": 1
         },
         "total": {
-            "espera": 18,
+            "espera": 17,
             "atencion": 3,
-            "cola": 21,
-            "timestamp": "2025-09-17 12:16:03"
+            "cola": 20,
+            "timestamp": "2025-09-17 12:18:00"
         }
     }
 }
