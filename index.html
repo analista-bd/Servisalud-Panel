@@ -269,27 +269,22 @@ var githubJsonUrl = "https://analista-bd.github.io/Servisalud-Panel/data/farmaci
 /* -------------------------
    Helpers
    ------------------------- */
-// Normaliza un string: quita tildes, espacios y lo deja en minúsculas
 function normalizeStr(s) {
   if (s === null || s === undefined) return "";
   try {
     return s.toString()
             .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '') // quita diacríticos
-            .replace(/\s+/g, '')             // quita espacios
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/\s+/g, '')
             .toLowerCase();
   } catch (e) {
     return s.toString().replace(/\s+/g, '').toLowerCase();
   }
 }
 
-// Busca la clave correspondiente en los datos (soporta "Campín" <-> "Campin")
 function findSedeKeyInData(sede, data) {
   if (!sede || !data) return null;
-  // primer intento: coincidencia exacta
   if (data.hasOwnProperty(sede)) return sede;
-
-  // si no, compara normalizando
   var norm = normalizeStr(sede);
   for (var k in data) {
     if (!data.hasOwnProperty(k)) continue;
@@ -302,7 +297,6 @@ function findSedeKeyInData(sede, data) {
    UI helpers
    ------------------------- */
 function resetearBreadcrumbs() {
-  // Reset farmacia
   var el = document.getElementById("sede-actual-farmacia");
   if (el) el.textContent = "🏢 Selecciona una sede";
   var labF = document.getElementById("turnos-label-farmacia");
@@ -310,7 +304,6 @@ function resetearBreadcrumbs() {
   var tbf = document.querySelector("#data-table-farmacia tbody");
   if (tbf) tbf.innerHTML = "<tr><td colspan='3'>Selecciona una sede</td></tr>";
 
-  // Reset usuario
   var el2 = document.getElementById("sede-actual-usuario");
   if (el2) el2.textContent = "🏢 Selecciona una sede";
   var labU = document.getElementById("turnos-label-usuario");
@@ -328,7 +321,6 @@ function resetearBreadcrumbs() {
 
 function mostrarTabs(tipo) {
   resetearBreadcrumbs();
-
   var tf = document.getElementById("tabs-farmacia");
   var tu = document.getElementById("tabs-usuario");
   var bf = document.getElementById("btn-farmacia");
@@ -348,15 +340,10 @@ function mostrarTabs(tipo) {
   }
 }
 
-/* -------------------------
-   Petición al JSON publicado en GitHub
-   ------------------------- */
 async function fetchFromGitHub() {
   try {
-    const resp = await fetch(githubJsonUrl, { cache: "no-store" }); // no usar cache
-    if (!resp.ok) {
-      throw new Error("Error al obtener JSON: " + resp.status + " " + resp.statusText);
-    }
+    const resp = await fetch(githubJsonUrl, { cache: "no-store" });
+    if (!resp.ok) throw new Error("Error al obtener JSON: " + resp.status + " " + resp.statusText);
     const json = await resp.json();
     return json;
   } catch (err) {
@@ -365,19 +352,13 @@ async function fetchFromGitHub() {
   }
 }
 
-
-/* -------------------------
-   Carga y renderizado de datos
-   ------------------------- */
 async function cargarDatos(tablaId, labelId, sede) {
   try {
-    // Obtener datos desde PowerAutomate
-    const data = await fetchFromGitHub();
+    if (!verificarHorario()) return; // Bloquea fuera de horario
 
-    // Buscar clave de sede dentro del JSON (maneja acentos/espacios)
+    const data = await fetchFromGitHub();
     var sedeKey = findSedeKeyInData(sede, data);
     if (!sedeKey) {
-      // Si no encontró la sede, mostrar mensaje en tabla
       var tbodyNo = document.querySelector(`#${tablaId} tbody`);
       if (tbodyNo) tbodyNo.innerHTML = "<tr><td colspan='3'>❌ No hay datos para esta sede</td></tr>";
       return;
@@ -388,9 +369,8 @@ async function cargarDatos(tablaId, labelId, sede) {
     if (!tbody) return;
     tbody.innerHTML = "";
 
-    // Recorremos las claves de la sede (ej G,H,AE) y evitamos la clave "total"
     Object.keys(sedeData).forEach(function(key) {
-      if (key === "total") return; // omitimos fila total en el detalle
+      if (key === "total") return;
       var item = sedeData[key];
       if (item && typeof item === "object" && item.espera !== undefined) {
         var row = "<tr>" +
@@ -402,26 +382,18 @@ async function cargarDatos(tablaId, labelId, sede) {
       }
     });
 
-    // Actualizar label de turnos con animación (tomamos sedeData.total.cola)
     if (sedeData.total && sedeData.total.cola !== undefined) {
       var cola = sedeData.total.cola;
       var label = document.getElementById(labelId);
       if (label) {
         label.textContent = "Turnos en cola: " + cola;
-        // reset de clases (dejamos la base 'turnos-label')
         label.className = "turnos-label";
-        if (cola <= 20) {
-          // mantener fondo por defecto (no necesita clase adicional)
-        } else if (cola <= 39) {
-          label.classList.add("amarillo");
-        } else if (cola <= 54) {
-          label.classList.add("naranja");
-        } else {
-          label.classList.add("rojo");
-        }
-        // animación breve
+        if (cola <= 20) { } 
+        else if (cola <= 39) { label.classList.add("amarillo"); }
+        else if (cola <= 54) { label.classList.add("naranja"); }
+        else { label.classList.add("rojo"); }
         label.classList.add("animate");
-        setTimeout(function(){ label.classList.remove("animate"); }, 500);
+        setTimeout(()=>{ label.classList.remove("animate"); }, 500);
       }
     }
 
@@ -432,10 +404,9 @@ async function cargarDatos(tablaId, labelId, sede) {
   }
 }
 
-/* -------------------------
-   Mostrar tabla / control de timer
-   ------------------------- */
 function mostrarTabla(sede, tipo) {
+  if (!verificarHorario()) return; // Bloquea fuera de horario
+
   var tablaId = tipo === "farmacia" ? "data-table-farmacia" : "data-table-usuario";
   var labelId = tipo === "farmacia" ? "turnos-label-farmacia" : "turnos-label-usuario";
   var sedeLabelId = tipo === "farmacia" ? "sede-actual-farmacia" : "sede-actual-usuario";
@@ -449,20 +420,11 @@ function mostrarTabla(sede, tipo) {
     if (pw) pw.style.display = 'inline-block';
   }
 
-  // limpiar intervalos anteriores
-  if (intervalId) {
-    clearInterval(intervalId);
-    intervalId = null;
-  }
-
-  // carga inicial y programada
+  if (intervalId) { clearInterval(intervalId); intervalId = null; }
   cargarDatos(tablaId, labelId, sede);
   intervalId = setInterval(function() { cargarDatos(tablaId, labelId, sede); }, 5000);
 }
 
-/* -------------------------
-   Breadcrumb piso
-   ------------------------- */
 function actualizarBreadcrumb() {
   var piso = document.getElementById('select-piso-usuario').value;
   var target = document.getElementById('sede-actual-usuario');
@@ -473,7 +435,31 @@ function actualizarBreadcrumb() {
     target.textContent = "🏢 Atención al Usuario > Sede " + sedeActualUsuario + " | Piso " + piso;
   }
 }
-</script>
 
+/* -------------------------
+   Control de horario de funcionamiento
+   ------------------------- */
+function verificarHorario() {
+  const ahora = new Date();
+  const horas = ahora.getHours();
+  const minutos = ahora.getMinutes();
+
+  const inicio = 5 * 60 + 30; // 5:30 AM
+  const fin = 21 * 60;        // 9:00 PM
+  const ahoraMinutos = horas * 60 + minutos;
+
+  if (ahoraMinutos < inicio || ahoraMinutos > fin) {
+    document.body.innerHTML = `
+      <h1>⏰ Página fuera de horario de funcionamiento</h1>
+      <p>La página solo funciona de <b>5:30 AM</b> a <b>9:00 PM</b>.</p>
+    `;
+    return false;
+  }
+  return true;
+}
+
+// Verificar al cargar la página
+verificarHorario();
+</script>
 </body>
 </html>
