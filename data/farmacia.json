@@ -1,48 +1,48 @@
 {
     "116": {
         "G": {
-            "espera": 0,
+            "espera": 1,
             "atencion": 2
         },
         "H": {
             "espera": 4,
-            "atencion": 4
+            "atencion": 5
         },
         "AE": {
             "espera": 0,
             "atencion": 1
         },
         "total": {
-            "espera": 4,
-            "atencion": 7,
-            "cola": 12,
-            "timestamp": "2025-09-17 18:53:58"
+            "espera": 5,
+            "atencion": 8,
+            "cola": 13,
+            "timestamp": "2025-09-17 18:55:30"
         }
     },
     "Campin": {
         "G": {
-            "espera": 4,
+            "espera": 5,
             "atencion": 3
         },
         "H": {
-            "espera": 8,
-            "atencion": 2
+            "espera": 10,
+            "atencion": 1
         },
         "AE": {
             "espera": 3,
             "atencion": 1
         },
         "total": {
-            "espera": 15,
-            "atencion": 6,
-            "cola": 22,
-            "timestamp": "2025-09-17 18:53:58"
+            "espera": 18,
+            "atencion": 5,
+            "cola": 23,
+            "timestamp": "2025-09-17 18:55:30"
         }
     },
     "Kennedy": {
         "F": {
             "espera": 4,
-            "atencion": 2
+            "atencion": 1
         },
         "M": {
             "espera": 0,
@@ -50,9 +50,9 @@
         },
         "total": {
             "espera": 4,
-            "atencion": 2,
-            "cola": 6,
-            "timestamp": "2025-09-17 18:53:58"
+            "atencion": 1,
+            "cola": 5,
+            "timestamp": "2025-09-17 18:55:30"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 0
         },
         "H": {
-            "espera": 13,
+            "espera": 14,
             "atencion": 2
         },
         "total": {
-            "espera": 13,
+            "espera": 14,
             "atencion": 2,
-            "cola": 15,
-            "timestamp": "2025-09-17 18:53:58"
+            "cola": 16,
+            "timestamp": "2025-09-17 18:55:30"
         }
     }
 }
