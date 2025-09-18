@@ -6,26 +6,26 @@
         },
         "H": {
             "espera": 5,
-            "atencion": 2
+            "atencion": 1
         },
         "AE": {
-            "espera": 28,
+            "espera": 29,
             "atencion": 1
         },
         "total": {
-            "espera": 44,
-            "atencion": 6,
-            "cola": 66,
-            "timestamp": "2025-09-18 11:09:42"
+            "espera": 45,
+            "atencion": 5,
+            "cola": 67,
+            "timestamp": "2025-09-18 11:11:23"
         }
     },
     "Campin": {
         "G": {
-            "espera": 2,
-            "atencion": 2
+            "espera": 3,
+            "atencion": 3
         },
         "H": {
-            "espera": 1,
+            "espera": 0,
             "atencion": 3
         },
         "AE": {
@@ -34,41 +34,41 @@
         },
         "total": {
             "espera": 5,
-            "atencion": 8,
+            "atencion": 9,
             "cola": 14,
-            "timestamp": "2025-09-18 11:09:42"
+            "timestamp": "2025-09-18 11:11:23"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 3,
+            "espera": 4,
             "atencion": 1
         },
         "M": {
-            "espera": 1,
+            "espera": 0,
             "atencion": 1
         },
         "total": {
             "espera": 4,
             "atencion": 2,
-            "cola": 7,
-            "timestamp": "2025-09-18 11:09:42"
+            "cola": 6,
+            "timestamp": "2025-09-18 11:11:23"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 15,
-            "atencion": 2
-        },
-        "H": {
-            "espera": 28,
+            "espera": 13,
             "atencion": 3
         },
+        "H": {
+            "espera": 24,
+            "atencion": 4
+        },
         "total": {
-            "espera": 43,
-            "atencion": 5,
-            "cola": 48,
-            "timestamp": "2025-09-18 11:09:42"
+            "espera": 37,
+            "atencion": 7,
+            "cola": 44,
+            "timestamp": "2025-09-18 11:11:23"
         }
     }
 }
