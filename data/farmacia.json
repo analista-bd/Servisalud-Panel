@@ -2,11 +2,11 @@
     "116": {
         "G": {
             "espera": 10,
-            "atencion": 1
+            "atencion": 2
         },
         "H": {
             "espera": 14,
-            "atencion": 4
+            "atencion": 3
         },
         "AE": {
             "espera": 2,
@@ -15,28 +15,28 @@
         "total": {
             "espera": 26,
             "atencion": 6,
-            "cola": 34,
-            "timestamp": "2025-09-18 09:29:11"
+            "cola": 32,
+            "timestamp": "2025-09-18 09:30:50"
         }
     },
     "Campin": {
         "G": {
             "espera": 5,
-            "atencion": 4
+            "atencion": 3
         },
         "H": {
-            "espera": 1,
+            "espera": 3,
             "atencion": 1
         },
         "AE": {
-            "espera": 15,
+            "espera": 13,
             "atencion": 2
         },
         "total": {
             "espera": 21,
-            "atencion": 7,
-            "cola": 28,
-            "timestamp": "2025-09-18 09:29:11"
+            "atencion": 6,
+            "cola": 27,
+            "timestamp": "2025-09-18 09:30:50"
         }
     },
     "Kennedy": {
@@ -51,24 +51,24 @@
         "total": {
             "espera": 9,
             "atencion": 3,
-            "cola": 12,
-            "timestamp": "2025-09-18 09:29:11"
+            "cola": 13,
+            "timestamp": "2025-09-18 09:30:50"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 6,
+            "espera": 8,
             "atencion": 0
         },
         "H": {
-            "espera": 29,
-            "atencion": 2
+            "espera": 30,
+            "atencion": 3
         },
         "total": {
-            "espera": 35,
-            "atencion": 2,
-            "cola": 37,
-            "timestamp": "2025-09-18 09:29:11"
+            "espera": 38,
+            "atencion": 3,
+            "cola": 41,
+            "timestamp": "2025-09-18 09:30:50"
         }
     }
 }
