@@ -1,47 +1,47 @@
 {
     "116": {
         "G": {
-            "espera": 0,
-            "atencion": 0
+            "espera": 5,
+            "atencion": 3
         },
         "H": {
-            "espera": 0,
-            "atencion": 0
+            "espera": 12,
+            "atencion": 2
         },
         "AE": {
-            "espera": 0,
-            "atencion": 0
+            "espera": 27,
+            "atencion": 1
         },
         "total": {
-            "espera": 0,
-            "atencion": 0,
-            "cola": 0,
-            "timestamp": "2025-09-18 11:59:01"
+            "espera": 44,
+            "atencion": 6,
+            "cola": 53,
+            "timestamp": "2025-09-18 12:00:23"
         }
     },
     "Campin": {
         "G": {
             "espera": 9,
-            "atencion": 4
+            "atencion": 5
         },
         "H": {
             "espera": 1,
-            "atencion": 2
+            "atencion": 1
         },
         "AE": {
-            "espera": 2,
-            "atencion": 3
+            "espera": 1,
+            "atencion": 2
         },
         "total": {
-            "espera": 12,
-            "atencion": 9,
-            "cola": 22,
-            "timestamp": "2025-09-18 11:59:01"
+            "espera": 11,
+            "atencion": 8,
+            "cola": 19,
+            "timestamp": "2025-09-18 12:00:23"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 9,
+            "espera": 8,
             "atencion": 1
         },
         "M": {
@@ -49,10 +49,10 @@
             "atencion": 1
         },
         "total": {
-            "espera": 12,
+            "espera": 11,
             "atencion": 2,
             "cola": 14,
-            "timestamp": "2025-09-18 11:59:01"
+            "timestamp": "2025-09-18 12:00:23"
         }
     },
     "Occidente": {
@@ -68,7 +68,7 @@
             "espera": 16,
             "atencion": 4,
             "cola": 20,
-            "timestamp": "2025-09-18 11:59:01"
+            "timestamp": "2025-09-18 12:00:23"
         }
     }
 }
