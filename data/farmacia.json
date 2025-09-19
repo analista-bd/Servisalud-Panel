@@ -2,21 +2,21 @@
     "116": {
         "G": {
             "espera": 5,
-            "atencion": 2
+            "atencion": 3
         },
         "H": {
-            "espera": 25,
-            "atencion": 2
+            "espera": 23,
+            "atencion": 4
         },
         "AE": {
             "espera": 0,
             "atencion": 0
         },
         "total": {
-            "espera": 30,
-            "atencion": 4,
-            "cola": 33,
-            "timestamp": "2025-09-19 13:39:43"
+            "espera": 28,
+            "atencion": 7,
+            "cola": 35,
+            "timestamp": "2025-09-19 13:41:27"
         }
     },
     "Campin": {
@@ -25,50 +25,50 @@
             "atencion": 1
         },
         "H": {
-            "espera": 3,
+            "espera": 5,
             "atencion": 4
         },
         "AE": {
-            "espera": 1,
-            "atencion": 3
+            "espera": 0,
+            "atencion": 2
         },
         "total": {
-            "espera": 4,
-            "atencion": 8,
+            "espera": 5,
+            "atencion": 7,
             "cola": 12,
-            "timestamp": "2025-09-19 13:39:43"
+            "timestamp": "2025-09-19 13:41:27"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 1,
-            "atencion": 0
-        },
-        "M": {
             "espera": 0,
             "atencion": 1
+        },
+        "M": {
+            "espera": 1,
+            "atencion": 0
         },
         "total": {
             "espera": 1,
             "atencion": 1,
             "cola": 2,
-            "timestamp": "2025-09-19 13:39:43"
+            "timestamp": "2025-09-19 13:41:27"
         }
     },
     "Occidente": {
         "G": {
             "espera": 5,
-            "atencion": 0
+            "atencion": 1
         },
         "H": {
-            "espera": 26,
+            "espera": 24,
             "atencion": 4
         },
         "total": {
-            "espera": 31,
-            "atencion": 4,
-            "cola": 35,
-            "timestamp": "2025-09-19 13:39:43"
+            "espera": 29,
+            "atencion": 5,
+            "cola": 34,
+            "timestamp": "2025-09-19 13:41:27"
         }
     }
 }
