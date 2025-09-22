@@ -1,8 +1,8 @@
 {
     "116": {
         "G": {
-            "espera": 28,
-            "atencion": 2
+            "espera": 26,
+            "atencion": 4
         },
         "H": {
             "espera": 19,
@@ -13,30 +13,30 @@
             "atencion": 0
         },
         "total": {
-            "espera": 47,
-            "atencion": 2,
-            "cola": 67,
-            "timestamp": "2025-09-22 11:44:56"
+            "espera": 45,
+            "atencion": 4,
+            "cola": 68,
+            "timestamp": "2025-09-22 11:46:38"
         }
     },
     "Campin": {
         "G": {
             "espera": 10,
-            "atencion": 2
-        },
-        "H": {
-            "espera": 17,
-            "atencion": 2
-        },
-        "AE": {
-            "espera": 11,
             "atencion": 1
         },
+        "H": {
+            "espera": 14,
+            "atencion": 3
+        },
+        "AE": {
+            "espera": 10,
+            "atencion": 2
+        },
         "total": {
-            "espera": 38,
-            "atencion": 5,
-            "cola": 43,
-            "timestamp": "2025-09-22 11:44:56"
+            "espera": 34,
+            "atencion": 6,
+            "cola": 41,
+            "timestamp": "2025-09-22 11:46:38"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 36,
             "atencion": 1,
             "cola": 37,
-            "timestamp": "2025-09-22 11:44:56"
+            "timestamp": "2025-09-22 11:46:38"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 8,
-            "atencion": 0
+            "espera": 7,
+            "atencion": 1
         },
         "H": {
-            "espera": 27,
+            "espera": 26,
             "atencion": 3
         },
         "total": {
-            "espera": 35,
-            "atencion": 3,
-            "cola": 38,
-            "timestamp": "2025-09-22 11:44:56"
+            "espera": 33,
+            "atencion": 4,
+            "cola": 37,
+            "timestamp": "2025-09-22 11:46:38"
         }
     }
 }
