@@ -1,8 +1,8 @@
 {
     "116": {
         "G": {
-            "espera": 27,
-            "atencion": 3
+            "espera": 28,
+            "atencion": 4
         },
         "H": {
             "espera": 9,
@@ -13,35 +13,35 @@
             "atencion": 0
         },
         "total": {
-            "espera": 40,
-            "atencion": 4,
-            "cola": 45,
-            "timestamp": "2025-09-22 13:21:40"
+            "espera": 41,
+            "atencion": 5,
+            "cola": 46,
+            "timestamp": "2025-09-22 13:23:20"
         }
     },
     "Campin": {
         "G": {
             "espera": 4,
-            "atencion": 2
+            "atencion": 3
         },
         "H": {
-            "espera": 0,
+            "espera": 1,
             "atencion": 3
         },
         "AE": {
             "espera": 1,
-            "atencion": 2
+            "atencion": 1
         },
         "total": {
-            "espera": 5,
+            "espera": 6,
             "atencion": 7,
-            "cola": 12,
-            "timestamp": "2025-09-22 13:21:40"
+            "cola": 13,
+            "timestamp": "2025-09-22 13:23:20"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 27,
+            "espera": 28,
             "atencion": 0
         },
         "M": {
@@ -49,10 +49,10 @@
             "atencion": 1
         },
         "total": {
-            "espera": 45,
+            "espera": 46,
             "atencion": 1,
             "cola": 47,
-            "timestamp": "2025-09-22 13:21:40"
+            "timestamp": "2025-09-22 13:23:20"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 2
         },
         "H": {
-            "espera": 33,
+            "espera": 31,
             "atencion": 3
         },
         "total": {
-            "espera": 37,
+            "espera": 35,
             "atencion": 5,
-            "cola": 42,
-            "timestamp": "2025-09-22 13:21:40"
+            "cola": 40,
+            "timestamp": "2025-09-22 13:23:20"
         }
     }
 }
