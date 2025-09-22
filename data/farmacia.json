@@ -1,8 +1,8 @@
 {
     "116": {
         "G": {
-            "espera": 24,
-            "atencion": 4
+            "espera": 25,
+            "atencion": 3
         },
         "H": {
             "espera": 9,
@@ -13,35 +13,35 @@
             "atencion": 1
         },
         "total": {
-            "espera": 36,
-            "atencion": 6,
-            "cola": 43,
-            "timestamp": "2025-09-22 13:26:44"
+            "espera": 37,
+            "atencion": 5,
+            "cola": 40,
+            "timestamp": "2025-09-22 13:28:24"
         }
     },
     "Campin": {
         "G": {
-            "espera": 5,
-            "atencion": 2
+            "espera": 6,
+            "atencion": 1
         },
         "H": {
             "espera": 2,
             "atencion": 3
         },
         "AE": {
-            "espera": 2,
+            "espera": 1,
             "atencion": 2
         },
         "total": {
             "espera": 9,
-            "atencion": 7,
-            "cola": 17,
-            "timestamp": "2025-09-22 13:26:44"
+            "atencion": 6,
+            "cola": 16,
+            "timestamp": "2025-09-22 13:28:24"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 27,
+            "espera": 28,
             "atencion": 0
         },
         "M": {
@@ -49,10 +49,10 @@
             "atencion": 1
         },
         "total": {
-            "espera": 45,
+            "espera": 46,
             "atencion": 1,
             "cola": 47,
-            "timestamp": "2025-09-22 13:26:44"
+            "timestamp": "2025-09-22 13:28:24"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 1
         },
         "H": {
-            "espera": 30,
+            "espera": 32,
             "atencion": 3
         },
         "total": {
-            "espera": 34,
+            "espera": 36,
             "atencion": 4,
-            "cola": 38,
-            "timestamp": "2025-09-22 13:26:44"
+            "cola": 40,
+            "timestamp": "2025-09-22 13:28:24"
         }
     }
 }
