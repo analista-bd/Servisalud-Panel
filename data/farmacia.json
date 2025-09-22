@@ -1,8 +1,8 @@
 {
     "116": {
         "G": {
-            "espera": 22,
-            "atencion": 2
+            "espera": 24,
+            "atencion": 1
         },
         "H": {
             "espera": 15,
@@ -13,15 +13,15 @@
             "atencion": 1
         },
         "total": {
-            "espera": 43,
-            "atencion": 4,
-            "cola": 47,
-            "timestamp": "2025-09-22 09:08:22"
+            "espera": 45,
+            "atencion": 3,
+            "cola": 50,
+            "timestamp": "2025-09-22 09:10:06"
         }
     },
     "Campin": {
         "G": {
-            "espera": 6,
+            "espera": 5,
             "atencion": 1
         },
         "H": {
@@ -29,19 +29,19 @@
             "atencion": 0
         },
         "AE": {
-            "espera": 6,
-            "atencion": 3
+            "espera": 8,
+            "atencion": 2
         },
         "total": {
-            "espera": 16,
-            "atencion": 4,
-            "cola": 20,
-            "timestamp": "2025-09-22 09:08:22"
+            "espera": 17,
+            "atencion": 3,
+            "cola": 21,
+            "timestamp": "2025-09-22 09:10:06"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 1,
+            "espera": 2,
             "atencion": 0
         },
         "M": {
@@ -49,26 +49,26 @@
             "atencion": 1
         },
         "total": {
-            "espera": 5,
+            "espera": 6,
             "atencion": 1,
             "cola": 7,
-            "timestamp": "2025-09-22 09:08:22"
+            "timestamp": "2025-09-22 09:10:06"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 11,
+            "espera": 10,
             "atencion": 1
         },
         "H": {
-            "espera": 35,
+            "espera": 36,
             "atencion": 3
         },
         "total": {
             "espera": 46,
             "atencion": 4,
             "cola": 53,
-            "timestamp": "2025-09-22 09:08:22"
+            "timestamp": "2025-09-22 09:10:06"
         }
     }
 }
