@@ -1,31 +1,31 @@
 {
     "116": {
         "G": {
-            "espera": 1,
+            "espera": 2,
             "atencion": 2
         },
         "H": {
-            "espera": 8,
-            "atencion": 3
+            "espera": 9,
+            "atencion": 4
         },
         "AE": {
             "espera": 0,
             "atencion": 0
         },
         "total": {
-            "espera": 9,
-            "atencion": 5,
-            "cola": 14,
-            "timestamp": "2025-09-23 07:05:29"
+            "espera": 11,
+            "atencion": 6,
+            "cola": 16,
+            "timestamp": "2025-09-23 07:07:04"
         }
     },
     "Campin": {
         "G": {
-            "espera": 5,
+            "espera": 6,
             "atencion": 4
         },
         "H": {
-            "espera": 1,
+            "espera": 2,
             "atencion": 1
         },
         "AE": {
@@ -33,15 +33,15 @@
             "atencion": 0
         },
         "total": {
-            "espera": 6,
+            "espera": 8,
             "atencion": 5,
-            "cola": 11,
-            "timestamp": "2025-09-23 07:05:29"
+            "cola": 13,
+            "timestamp": "2025-09-23 07:07:04"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 4,
+            "espera": 3,
             "atencion": 0
         },
         "M": {
@@ -49,10 +49,10 @@
             "atencion": 0
         },
         "total": {
-            "espera": 6,
+            "espera": 5,
             "atencion": 0,
             "cola": 6,
-            "timestamp": "2025-09-23 07:05:29"
+            "timestamp": "2025-09-23 07:07:04"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 0
         },
         "H": {
-            "espera": 11,
+            "espera": 12,
             "atencion": 2
         },
         "total": {
-            "espera": 13,
+            "espera": 14,
             "atencion": 2,
-            "cola": 15,
-            "timestamp": "2025-09-23 07:05:29"
+            "cola": 16,
+            "timestamp": "2025-09-23 07:07:04"
         }
     }
 }
