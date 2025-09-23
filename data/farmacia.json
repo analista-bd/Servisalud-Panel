@@ -1,22 +1,22 @@
 {
     "116": {
         "G": {
-            "espera": 5,
-            "atencion": 4
+            "espera": 3,
+            "atencion": 3
         },
         "H": {
-            "espera": 1,
+            "espera": 0,
             "atencion": 3
         },
         "AE": {
-            "espera": 6,
+            "espera": 4,
             "atencion": 1
         },
         "total": {
-            "espera": 12,
-            "atencion": 8,
-            "cola": 20,
-            "timestamp": "2025-09-23 12:16:29"
+            "espera": 7,
+            "atencion": 7,
+            "cola": 14,
+            "timestamp": "2025-09-23 12:18:04"
         }
     },
     "Campin": {
@@ -25,7 +25,7 @@
             "atencion": 3
         },
         "H": {
-            "espera": 16,
+            "espera": 15,
             "atencion": 4
         },
         "AE": {
@@ -33,15 +33,15 @@
             "atencion": 1
         },
         "total": {
-            "espera": 36,
+            "espera": 35,
             "atencion": 8,
-            "cola": 44,
-            "timestamp": "2025-09-23 12:16:29"
+            "cola": 43,
+            "timestamp": "2025-09-23 12:18:04"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 9,
+            "espera": 8,
             "atencion": 0
         },
         "M": {
@@ -49,10 +49,10 @@
             "atencion": 0
         },
         "total": {
-            "espera": 17,
+            "espera": 16,
             "atencion": 0,
             "cola": 17,
-            "timestamp": "2025-09-23 12:16:29"
+            "timestamp": "2025-09-23 12:18:04"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 0
         },
         "H": {
-            "espera": 2,
+            "espera": 1,
             "atencion": 2
         },
         "total": {
-            "espera": 2,
+            "espera": 1,
             "atencion": 2,
-            "cola": 4,
-            "timestamp": "2025-09-23 12:16:29"
+            "cola": 3,
+            "timestamp": "2025-09-23 12:18:04"
         }
     }
 }
