@@ -5,43 +5,43 @@
             "atencion": 1
         },
         "H": {
-            "espera": 2,
-            "atencion": 4
+            "espera": 1,
+            "atencion": 3
         },
         "AE": {
             "espera": 0,
             "atencion": 0
         },
         "total": {
-            "espera": 2,
-            "atencion": 5,
-            "cola": 7,
-            "timestamp": "2025-09-22 18:57:55"
+            "espera": 1,
+            "atencion": 4,
+            "cola": 5,
+            "timestamp": "2025-09-22 18:59:31"
         }
     },
     "Campin": {
         "G": {
-            "espera": 0,
+            "espera": 1,
             "atencion": 3
         },
         "H": {
-            "espera": 0,
-            "atencion": 7
+            "espera": 1,
+            "atencion": 6
         },
         "AE": {
             "espera": 0,
             "atencion": 0
         },
         "total": {
-            "espera": 0,
-            "atencion": 10,
+            "espera": 2,
+            "atencion": 9,
             "cola": 10,
-            "timestamp": "2025-09-22 18:57:55"
+            "timestamp": "2025-09-22 18:59:31"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 30,
+            "espera": 29,
             "atencion": 0
         },
         "M": {
@@ -49,10 +49,10 @@
             "atencion": 1
         },
         "total": {
-            "espera": 49,
+            "espera": 48,
             "atencion": 1,
             "cola": 71,
-            "timestamp": "2025-09-22 18:57:55"
+            "timestamp": "2025-09-22 18:59:31"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 0
         },
         "H": {
-            "espera": 11,
+            "espera": 12,
             "atencion": 2
         },
         "total": {
-            "espera": 12,
+            "espera": 13,
             "atencion": 2,
-            "cola": 14,
-            "timestamp": "2025-09-22 18:57:55"
+            "cola": 15,
+            "timestamp": "2025-09-22 18:59:31"
         }
     }
 }
