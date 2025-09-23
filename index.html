@@ -173,10 +173,46 @@
       color: #555;
       font-style: italic;
     }
+
+/* --- CÓDIGO QR A LA IZQUIERDA --- */
+.qr-container {
+  float: left; /* lo alinea a la izquierda */
+  margin: 20px 20px 20px 40px; /* espacio alrededor */
+  text-align: center;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: absolute;
+}
+
+.qr-container p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.qr-image {
+  width: 200px;   /* más grande */
+  height: 200px;  /* más grande */
+  object-fit: contain;
+  border: 2px solid #00b3b3;
+  border-radius: 12px;
+}
+
+
+
   </style>
 </head>
 <body>
   <h1>📊 Panel de Turnos</h1>
+
+    <!-- CÓDIGO QR -->
+<div class="qr-container">
+  <p>Escanea el QR</p>
+  <img src="QR.png" alt="Código QR" class="qr-image">
+</div>
+
 
   <!-- OPCIONES PRINCIPALES -->
   <div class="main-options">
@@ -257,6 +293,9 @@
 
   <p class="nota">⚠️ La página de YNEXT solo permite visualizar hasta <b>50 turnos</b> a la vez.  
   Los adicionales no serán visibles.</p>
+
+
+
 
   <script>
 /* -------------------------
