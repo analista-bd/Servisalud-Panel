@@ -5,18 +5,18 @@
             "atencion": 0
         },
         "H": {
-            "espera": 1,
-            "atencion": 3
+            "espera": 0,
+            "atencion": 5
         },
         "AE": {
             "espera": 0,
             "atencion": 0
         },
         "total": {
-            "espera": 1,
-            "atencion": 3,
+            "espera": 0,
+            "atencion": 5,
             "cola": 4,
-            "timestamp": "2025-09-24 18:39:10"
+            "timestamp": "2025-09-24 18:40:42"
         }
     },
     "Campin": {
@@ -25,23 +25,23 @@
             "atencion": 0
         },
         "H": {
-            "espera": 1,
-            "atencion": 2
+            "espera": 0,
+            "atencion": 1
         },
         "AE": {
             "espera": 0,
             "atencion": 0
         },
         "total": {
-            "espera": 2,
-            "atencion": 2,
-            "cola": 5,
-            "timestamp": "2025-09-24 18:39:10"
+            "espera": 1,
+            "atencion": 1,
+            "cola": 2,
+            "timestamp": "2025-09-24 18:40:42"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 17,
+            "espera": 16,
             "atencion": 0
         },
         "M": {
@@ -49,10 +49,10 @@
             "atencion": 0
         },
         "total": {
-            "espera": 22,
+            "espera": 21,
             "atencion": 0,
             "cola": 22,
-            "timestamp": "2025-09-24 18:39:10"
+            "timestamp": "2025-09-24 18:40:42"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 0
         },
         "H": {
-            "espera": 10,
-            "atencion": 2
+            "espera": 6,
+            "atencion": 3
         },
         "total": {
-            "espera": 10,
-            "atencion": 2,
-            "cola": 12,
-            "timestamp": "2025-09-24 18:39:10"
+            "espera": 6,
+            "atencion": 3,
+            "cola": 9,
+            "timestamp": "2025-09-24 18:40:42"
         }
     }
 }
