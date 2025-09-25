@@ -1,42 +1,42 @@
 {
     "116": {
         "G": {
-            "espera": 9,
+            "espera": 10,
             "atencion": 1
         },
         "H": {
-            "espera": 27,
+            "espera": 26,
             "atencion": 4
         },
         "AE": {
-            "espera": 8,
-            "atencion": 1
+            "espera": 7,
+            "atencion": 2
         },
         "total": {
-            "espera": 44,
-            "atencion": 6,
-            "cola": 62,
-            "timestamp": "2025-09-25 10:50:43"
+            "espera": 43,
+            "atencion": 7,
+            "cola": 59,
+            "timestamp": "2025-09-25 10:52:24"
         }
     },
     "Campin": {
         "G": {
-            "espera": 19,
-            "atencion": 2
+            "espera": 18,
+            "atencion": 3
         },
         "H": {
-            "espera": 12,
+            "espera": 13,
             "atencion": 4
         },
         "AE": {
-            "espera": 8,
+            "espera": 6,
             "atencion": 3
         },
         "total": {
-            "espera": 39,
-            "atencion": 9,
-            "cola": 49,
-            "timestamp": "2025-09-25 10:50:43"
+            "espera": 37,
+            "atencion": 10,
+            "cola": 47,
+            "timestamp": "2025-09-25 10:52:24"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 13,
             "atencion": 0,
             "cola": 14,
-            "timestamp": "2025-09-25 10:50:43"
+            "timestamp": "2025-09-25 10:52:24"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 3,
+            "espera": 4,
             "atencion": 1
         },
         "H": {
-            "espera": 11,
+            "espera": 12,
             "atencion": 2
         },
         "total": {
-            "espera": 14,
+            "espera": 16,
             "atencion": 3,
-            "cola": 17,
-            "timestamp": "2025-09-25 10:50:43"
+            "cola": 19,
+            "timestamp": "2025-09-25 10:52:24"
         }
     }
 }
