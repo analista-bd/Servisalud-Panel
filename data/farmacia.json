@@ -1,22 +1,22 @@
 {
     "116": {
         "G": {
-            "espera": 1,
-            "atencion": 1
+            "espera": 2,
+            "atencion": 0
         },
         "H": {
             "espera": 1,
-            "atencion": 0
+            "atencion": 1
         },
         "AE": {
             "espera": 0,
             "atencion": 0
         },
         "total": {
-            "espera": 2,
+            "espera": 3,
             "atencion": 1,
-            "cola": 3,
-            "timestamp": "2025-09-25 17:54:09"
+            "cola": 5,
+            "timestamp": "2025-09-25 17:55:44"
         }
     },
     "Campin": {
@@ -25,7 +25,7 @@
             "atencion": 2
         },
         "H": {
-            "espera": 14,
+            "espera": 13,
             "atencion": 5
         },
         "AE": {
@@ -33,15 +33,15 @@
             "atencion": 0
         },
         "total": {
-            "espera": 17,
+            "espera": 16,
             "atencion": 7,
-            "cola": 24,
-            "timestamp": "2025-09-25 17:54:09"
+            "cola": 23,
+            "timestamp": "2025-09-25 17:55:44"
         }
     },
     "Kennedy": {
         "F": {
-            "espera": 30,
+            "espera": 29,
             "atencion": 0
         },
         "M": {
@@ -49,26 +49,26 @@
             "atencion": 0
         },
         "total": {
-            "espera": 41,
+            "espera": 40,
             "atencion": 0,
             "cola": 41,
-            "timestamp": "2025-09-25 17:54:09"
+            "timestamp": "2025-09-25 17:55:44"
         }
     },
     "Occidente": {
         "G": {
             "espera": 0,
-            "atencion": 1
+            "atencion": 0
         },
         "H": {
-            "espera": 12,
-            "atencion": 2
+            "espera": 11,
+            "atencion": 3
         },
         "total": {
-            "espera": 12,
+            "espera": 11,
             "atencion": 3,
             "cola": 14,
-            "timestamp": "2025-09-25 17:54:09"
+            "timestamp": "2025-09-25 17:55:44"
         }
     }
 }
