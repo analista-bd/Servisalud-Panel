@@ -1,22 +1,22 @@
 {
     "116": {
         "G": {
-            "espera": 9,
-            "atencion": 3
+            "espera": 8,
+            "atencion": 2
         },
         "H": {
-            "espera": 13,
+            "espera": 14,
             "atencion": 2
         },
         "AE": {
-            "espera": 1,
+            "espera": 0,
             "atencion": 1
         },
         "total": {
-            "espera": 23,
-            "atencion": 6,
-            "cola": 29,
-            "timestamp": "2025-09-26 14:46:56"
+            "espera": 22,
+            "atencion": 5,
+            "cola": 27,
+            "timestamp": "2025-09-26 14:48:33"
         }
     },
     "Campin": {
@@ -25,18 +25,18 @@
             "atencion": 2
         },
         "H": {
-            "espera": 0,
-            "atencion": 1
+            "espera": 1,
+            "atencion": 2
         },
         "AE": {
             "espera": 7,
             "atencion": 3
         },
         "total": {
-            "espera": 10,
-            "atencion": 6,
-            "cola": 16,
-            "timestamp": "2025-09-26 14:46:56"
+            "espera": 11,
+            "atencion": 7,
+            "cola": 18,
+            "timestamp": "2025-09-26 14:48:33"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 34,
             "atencion": 0,
             "cola": 35,
-            "timestamp": "2025-09-26 14:46:56"
+            "timestamp": "2025-09-26 14:48:33"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 4,
-            "atencion": 2
+            "espera": 5,
+            "atencion": 1
         },
         "H": {
-            "espera": 10,
-            "atencion": 2
+            "espera": 13,
+            "atencion": 1
         },
         "total": {
-            "espera": 14,
-            "atencion": 4,
-            "cola": 18,
-            "timestamp": "2025-09-26 14:46:56"
+            "espera": 18,
+            "atencion": 2,
+            "cola": 21,
+            "timestamp": "2025-09-26 14:48:33"
         }
     }
 }
