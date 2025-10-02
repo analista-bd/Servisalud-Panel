@@ -1,22 +1,22 @@
 {
     "116": {
         "G": {
-            "espera": 19,
-            "atencion": 3
+            "espera": 20,
+            "atencion": 2
         },
         "H": {
             "espera": 1,
-            "atencion": 3
+            "atencion": 1
         },
         "AE": {
-            "espera": 9,
-            "atencion": 3
+            "espera": 8,
+            "atencion": 2
         },
         "total": {
             "espera": 29,
-            "atencion": 9,
-            "cola": 38,
-            "timestamp": "2025-10-02 10:37:46"
+            "atencion": 5,
+            "cola": 35,
+            "timestamp": "2025-10-02 10:39:15"
         }
     },
     "Campin": {
@@ -25,18 +25,18 @@
             "atencion": 2
         },
         "H": {
-            "espera": 6,
+            "espera": 7,
             "atencion": 2
         },
         "AE": {
-            "espera": 17,
-            "atencion": 2
+            "espera": 16,
+            "atencion": 3
         },
         "total": {
             "espera": 36,
-            "atencion": 6,
-            "cola": 42,
-            "timestamp": "2025-10-02 10:37:46"
+            "atencion": 7,
+            "cola": 43,
+            "timestamp": "2025-10-02 10:39:15"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-10-02 10:37:46"
+            "timestamp": "2025-10-02 10:39:15"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 0,
-            "atencion": 0
+            "espera": 5,
+            "atencion": 3
         },
         "H": {
-            "espera": 0,
-            "atencion": 0
+            "espera": 33,
+            "atencion": 2
         },
         "total": {
-            "espera": 0,
-            "atencion": 0,
-            "cola": 0,
-            "timestamp": "2025-10-02 10:37:46"
+            "espera": 38,
+            "atencion": 5,
+            "cola": 43,
+            "timestamp": "2025-10-02 10:39:15"
         }
     }
 }
