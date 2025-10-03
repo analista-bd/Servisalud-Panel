@@ -1,11 +1,11 @@
 {
     "116": {
         "G": {
-            "espera": 4,
-            "atencion": 4
+            "espera": 5,
+            "atencion": 3
         },
         "H": {
-            "espera": 7,
+            "espera": 8,
             "atencion": 3
         },
         "AE": {
@@ -13,30 +13,30 @@
             "atencion": 1
         },
         "total": {
-            "espera": 15,
-            "atencion": 8,
-            "cola": 24,
-            "timestamp": "2025-10-03 16:13:35"
+            "espera": 17,
+            "atencion": 7,
+            "cola": 25,
+            "timestamp": "2025-10-03 16:15:14"
         }
     },
     "Campin": {
         "G": {
-            "espera": 11,
-            "atencion": 1
+            "espera": 10,
+            "atencion": 2
         },
         "H": {
-            "espera": 16,
-            "atencion": 1
+            "espera": 15,
+            "atencion": 2
         },
         "AE": {
-            "espera": 16,
-            "atencion": 0
+            "espera": 12,
+            "atencion": 3
         },
         "total": {
-            "espera": 43,
-            "atencion": 2,
+            "espera": 37,
+            "atencion": 7,
             "cola": 45,
-            "timestamp": "2025-10-03 16:13:35"
+            "timestamp": "2025-10-03 16:15:14"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-10-03 16:13:35"
+            "timestamp": "2025-10-03 16:15:14"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 2,
+            "espera": 4,
             "atencion": 4
         },
         "H": {
-            "espera": 10,
+            "espera": 11,
             "atencion": 2
         },
         "total": {
-            "espera": 12,
+            "espera": 15,
             "atencion": 6,
-            "cola": 18,
-            "timestamp": "2025-10-03 16:13:35"
+            "cola": 21,
+            "timestamp": "2025-10-03 16:15:14"
         }
     }
 }
