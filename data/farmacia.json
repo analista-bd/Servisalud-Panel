@@ -1,42 +1,42 @@
 {
     "116": {
         "G": {
-            "espera": 12,
+            "espera": 11,
             "atencion": 1
         },
         "H": {
-            "espera": 27,
-            "atencion": 4
+            "espera": 29,
+            "atencion": 3
         },
         "AE": {
-            "espera": 6,
-            "atencion": 0
+            "espera": 4,
+            "atencion": 1
         },
         "total": {
-            "espera": 45,
+            "espera": 44,
             "atencion": 5,
-            "cola": 84,
-            "timestamp": "2025-10-06 12:12:57"
+            "cola": 81,
+            "timestamp": "2025-10-06 12:14:41"
         }
     },
     "Campin": {
         "G": {
-            "espera": 24,
-            "atencion": 4
+            "espera": 22,
+            "atencion": 3
         },
         "H": {
-            "espera": 9,
+            "espera": 11,
             "atencion": 3
         },
         "AE": {
-            "espera": 7,
-            "atencion": 2
+            "espera": 9,
+            "atencion": 1
         },
         "total": {
-            "espera": 40,
-            "atencion": 9,
-            "cola": 64,
-            "timestamp": "2025-10-06 12:12:57"
+            "espera": 42,
+            "atencion": 7,
+            "cola": 60,
+            "timestamp": "2025-10-06 12:14:41"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-10-06 12:12:57"
+            "timestamp": "2025-10-06 12:14:41"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 10,
+            "espera": 9,
             "atencion": 1
         },
         "H": {
-            "espera": 37,
+            "espera": 38,
             "atencion": 2
         },
         "total": {
             "espera": 47,
             "atencion": 3,
-            "cola": 74,
-            "timestamp": "2025-10-06 12:12:57"
+            "cola": 73,
+            "timestamp": "2025-10-06 12:14:41"
         }
     }
 }
