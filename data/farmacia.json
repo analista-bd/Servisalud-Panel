@@ -1,27 +1,27 @@
 {
     "116": {
         "G": {
-            "espera": 6,
+            "espera": 7,
             "atencion": 3
         },
         "H": {
-            "espera": 12,
-            "atencion": 3
+            "espera": 14,
+            "atencion": 1
         },
         "AE": {
-            "espera": 25,
+            "espera": 24,
             "atencion": 1
         },
         "total": {
-            "espera": 43,
-            "atencion": 7,
-            "cola": 59,
-            "timestamp": "2025-10-08 12:28:23"
+            "espera": 45,
+            "atencion": 5,
+            "cola": 56,
+            "timestamp": "2025-10-08 12:29:49"
         }
     },
     "Campin": {
         "G": {
-            "espera": 4,
+            "espera": 3,
             "atencion": 3
         },
         "H": {
@@ -29,14 +29,14 @@
             "atencion": 3
         },
         "AE": {
-            "espera": 5,
-            "atencion": 2
+            "espera": 4,
+            "atencion": 3
         },
         "total": {
-            "espera": 17,
-            "atencion": 8,
+            "espera": 15,
+            "atencion": 9,
             "cola": 25,
-            "timestamp": "2025-10-08 12:28:23"
+            "timestamp": "2025-10-08 12:29:49"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-10-08 12:28:23"
+            "timestamp": "2025-10-08 12:29:49"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 0,
-            "atencion": 0
+            "espera": 7,
+            "atencion": 2
         },
         "H": {
-            "espera": 0,
-            "atencion": 0
+            "espera": 39,
+            "atencion": 2
         },
         "total": {
-            "espera": 0,
-            "atencion": 0,
-            "cola": 0,
-            "timestamp": "2025-10-08 12:28:23"
+            "espera": 46,
+            "atencion": 4,
+            "cola": 68,
+            "timestamp": "2025-10-08 12:29:49"
         }
     }
 }
