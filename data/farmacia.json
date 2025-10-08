@@ -1,42 +1,42 @@
 {
     "116": {
         "G": {
-            "espera": 7,
+            "espera": 8,
             "atencion": 3
         },
         "H": {
-            "espera": 11,
-            "atencion": 3
+            "espera": 12,
+            "atencion": 2
         },
         "AE": {
-            "espera": 25,
+            "espera": 24,
             "atencion": 1
         },
         "total": {
-            "espera": 43,
-            "atencion": 7,
-            "cola": 54,
-            "timestamp": "2025-10-08 12:31:29"
+            "espera": 44,
+            "atencion": 6,
+            "cola": 51,
+            "timestamp": "2025-10-08 12:33:09"
         }
     },
     "Campin": {
         "G": {
-            "espera": 2,
-            "atencion": 3
+            "espera": 0,
+            "atencion": 4
         },
         "H": {
-            "espera": 10,
+            "espera": 12,
             "atencion": 3
         },
         "AE": {
-            "espera": 3,
+            "espera": 2,
             "atencion": 3
         },
         "total": {
-            "espera": 15,
-            "atencion": 9,
-            "cola": 25,
-            "timestamp": "2025-10-08 12:31:29"
+            "espera": 14,
+            "atencion": 10,
+            "cola": 24,
+            "timestamp": "2025-10-08 12:33:09"
         }
     },
     "Kennedy": {
@@ -52,7 +52,7 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-10-08 12:31:29"
+            "timestamp": "2025-10-08 12:33:09"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 3
         },
         "H": {
-            "espera": 37,
-            "atencion": 2
+            "espera": 38,
+            "atencion": 1
         },
         "total": {
-            "espera": 45,
-            "atencion": 5,
-            "cola": 61,
-            "timestamp": "2025-10-08 12:31:29"
+            "espera": 46,
+            "atencion": 4,
+            "cola": 59,
+            "timestamp": "2025-10-08 12:33:09"
         }
     }
 }
