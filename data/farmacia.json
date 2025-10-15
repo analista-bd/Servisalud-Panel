@@ -2,10 +2,10 @@
     "116": {
         "G": {
             "espera": 7,
-            "atencion": 1
+            "atencion": 0
         },
         "H": {
-            "espera": 22,
+            "espera": 23,
             "atencion": 2
         },
         "AE": {
@@ -13,19 +13,19 @@
             "atencion": 1
         },
         "total": {
-            "espera": 33,
-            "atencion": 4,
+            "espera": 34,
+            "atencion": 3,
             "cola": 37,
-            "timestamp": "2025-10-15 15:27:20"
+            "timestamp": "2025-10-15 15:29:00"
         }
     },
     "Campin": {
         "G": {
-            "espera": 12,
-            "atencion": 3
+            "espera": 14,
+            "atencion": 2
         },
         "H": {
-            "espera": 24,
+            "espera": 23,
             "atencion": 4
         },
         "AE": {
@@ -33,10 +33,10 @@
             "atencion": 3
         },
         "total": {
-            "espera": 40,
-            "atencion": 10,
-            "cola": 60,
-            "timestamp": "2025-10-15 15:27:20"
+            "espera": 41,
+            "atencion": 9,
+            "cola": 57,
+            "timestamp": "2025-10-15 15:29:00"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-10-15 15:27:20"
+            "timestamp": "2025-10-15 15:29:00"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 12,
-            "atencion": 2
+            "espera": 13,
+            "atencion": 1
         },
         "H": {
-            "espera": 27,
-            "atencion": 5
+            "espera": 24,
+            "atencion": 4
         },
         "total": {
-            "espera": 39,
-            "atencion": 7,
-            "cola": 46,
-            "timestamp": "2025-10-15 15:27:20"
+            "espera": 37,
+            "atencion": 5,
+            "cola": 42,
+            "timestamp": "2025-10-15 15:29:00"
         }
     }
 }
