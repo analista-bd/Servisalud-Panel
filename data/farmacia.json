@@ -1,74 +1,244 @@
 {
     "116": {
-        "G": {
-            "espera": 0,
-            "atencion": 0
+        "Piso 1": {
+            "A": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "Q": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 6,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         },
-        "H": {
-            "espera": 0,
-            "atencion": 3
+        "Piso 2": {
+            "B": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "S": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "O": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         },
-        "AE": {
-            "espera": 0,
-            "atencion": 0
-        },
-        "total": {
-            "espera": 0,
-            "atencion": 3,
-            "cola": 3,
-            "timestamp": "2025-10-20 20:57:41"
+        "Piso 5": {
+            "K": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "C": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         }
     },
     "Campin": {
-        "G": {
-            "espera": 0,
-            "atencion": 0
+        "Piso 1": {
+            "B": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "L": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "O": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "P": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "R": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "S": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         },
-        "H": {
-            "espera": 0,
-            "atencion": 0
+        "Piso 2": {
+            "D": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "L": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "M": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "R": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         },
-        "AE": {
-            "espera": 0,
-            "atencion": 0
+        "Piso 3": {
+            "K": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "L": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "M": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "N": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "O": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "Q": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "R": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "S": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         },
-        "total": {
-            "espera": 0,
-            "atencion": 0,
-            "cola": 0,
-            "timestamp": "2025-10-20 20:57:41"
-        }
-    },
-    "Kennedy": {
-        "F": {
-            "espera": 0,
-            "atencion": 0
+        "Piso 4": {
+            "K": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "L": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "M": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "N": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "S": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "X": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         },
-        "M": {
-            "espera": 0,
-            "atencion": 0
-        },
-        "total": {
-            "espera": 0,
-            "atencion": 0,
-            "cola": 0,
-            "timestamp": "2025-10-20 20:57:41"
+        "Piso 5": {
+            "J": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "Q": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "V": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         }
     },
     "Occidente": {
-        "G": {
-            "espera": 0,
-            "atencion": 0
+        "Piso 1": {
+            "A": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "E": {
+                "espera": 2,
+                "atencion": 0
+            },
+            "P": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 2,
+                "atencion": 0,
+                "cola": 2,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         },
-        "H": {
-            "espera": 0,
-            "atencion": 0
-        },
-        "total": {
-            "espera": 0,
-            "atencion": 0,
-            "cola": 0,
-            "timestamp": "2025-10-20 20:57:41"
+        "Piso 4": {
+            "Q": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "D": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-20 21:20:55"
+            }
         }
     }
 }
