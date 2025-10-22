@@ -13,7 +13,7 @@
                 "espera": 0,
                 "atencion": 0,
                 "cola": 7,
-                "timestamp": "2025-10-21 19:36:30"
+                "timestamp": "2025-10-21 20:42:46"
             }
         },
         "Piso 2": {
@@ -33,7 +33,7 @@
                 "espera": 0,
                 "atencion": 0,
                 "cola": 0,
-                "timestamp": "2025-10-21 19:36:30"
+                "timestamp": "2025-10-21 20:42:46"
             }
         },
         "Piso 5": {
@@ -49,7 +49,7 @@
                 "espera": 0,
                 "atencion": 0,
                 "cola": 0,
-                "timestamp": "2025-10-21 19:36:30"
+                "timestamp": "2025-10-21 20:42:46"
             }
         }
     },
@@ -83,7 +83,7 @@
                 "espera": 0,
                 "atencion": 0,
                 "cola": 0,
-                "timestamp": "2025-10-21 19:36:30"
+                "timestamp": "2025-10-21 20:42:46"
             }
         },
         "Piso 2": {
@@ -107,7 +107,7 @@
                 "espera": 4,
                 "atencion": 0,
                 "cola": 4,
-                "timestamp": "2025-10-21 19:36:30"
+                "timestamp": "2025-10-21 20:42:46"
             }
         },
         "Piso 3": {
@@ -125,7 +125,7 @@
             },
             "N": {
                 "espera": 0,
-                "atencion": 0
+                "atencion": 1
             },
             "O": {
                 "espera": 0,
@@ -145,9 +145,9 @@
             },
             "total": {
                 "espera": 0,
-                "atencion": 0,
-                "cola": 0,
-                "timestamp": "2025-10-21 19:36:30"
+                "atencion": 1,
+                "cola": 1,
+                "timestamp": "2025-10-21 20:42:46"
             }
         },
         "Piso 4": {
@@ -179,7 +179,7 @@
                 "espera": 0,
                 "atencion": 0,
                 "cola": 0,
-                "timestamp": "2025-10-21 19:36:30"
+                "timestamp": "2025-10-21 20:42:46"
             }
         },
         "Piso 5": {
@@ -199,7 +199,7 @@
                 "espera": 0,
                 "atencion": 0,
                 "cola": 0,
-                "timestamp": "2025-10-21 19:36:30"
+                "timestamp": "2025-10-21 20:42:46"
             }
         }
     },
@@ -207,7 +207,7 @@
         "Piso 1": {
             "A": {
                 "espera": 0,
-                "atencion": 1
+                "atencion": 0
             },
             "E": {
                 "espera": 2,
@@ -219,9 +219,9 @@
             },
             "total": {
                 "espera": 2,
-                "atencion": 1,
-                "cola": 3,
-                "timestamp": "2025-10-21 19:36:30"
+                "atencion": 0,
+                "cola": 2,
+                "timestamp": "2025-10-21 20:42:46"
             }
         },
         "Piso 4": {
@@ -237,7 +237,57 @@
                 "espera": 0,
                 "atencion": 0,
                 "cola": 0,
-                "timestamp": "2025-10-21 19:36:30"
+                "timestamp": "2025-10-21 20:42:46"
+            }
+        }
+    },
+    "Carvajal": {
+        "Piso 1": {
+            "B": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "D": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "F": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-21 20:42:46"
+            }
+        },
+        "Piso 3": {
+            "C": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "E": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-21 20:42:46"
+            }
+        },
+        "Piso 4": {
+            "I": {
+                "espera": 0,
+                "atencion": 0
+            },
+            "total": {
+                "espera": 0,
+                "atencion": 0,
+                "cola": 0,
+                "timestamp": "2025-10-21 20:42:46"
             }
         }
     }
