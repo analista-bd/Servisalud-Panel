@@ -1,42 +1,42 @@
 {
     "116": {
         "G": {
-            "espera": 5,
+            "espera": 3,
             "atencion": 1
         },
         "H": {
             "espera": 13,
-            "atencion": 4
+            "atencion": 3
         },
         "AE": {
-            "espera": 7,
+            "espera": 6,
             "atencion": 2
         },
         "total": {
-            "espera": 25,
-            "atencion": 7,
-            "cola": 32,
-            "timestamp": "2025-10-28 12:10:22"
+            "espera": 22,
+            "atencion": 6,
+            "cola": 29,
+            "timestamp": "2025-10-28 12:12:01"
         }
     },
     "Campin": {
         "G": {
             "espera": 16,
-            "atencion": 3
+            "atencion": 2
         },
         "H": {
             "espera": 14,
             "atencion": 5
         },
         "AE": {
-            "espera": 10,
+            "espera": 11,
             "atencion": 2
         },
         "total": {
-            "espera": 40,
-            "atencion": 10,
-            "cola": 56,
-            "timestamp": "2025-10-28 12:10:22"
+            "espera": 41,
+            "atencion": 9,
+            "cola": 54,
+            "timestamp": "2025-10-28 12:12:01"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-10-28 12:10:22"
+            "timestamp": "2025-10-28 12:12:01"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 3,
-            "atencion": 0
-        },
-        "H": {
-            "espera": 27,
+            "espera": 2,
             "atencion": 1
         },
+        "H": {
+            "espera": 25,
+            "atencion": 2
+        },
         "total": {
-            "espera": 30,
-            "atencion": 1,
-            "cola": 31,
-            "timestamp": "2025-10-28 12:10:22"
+            "espera": 27,
+            "atencion": 3,
+            "cola": 30,
+            "timestamp": "2025-10-28 12:12:01"
         }
     }
 }
