@@ -5,28 +5,8 @@
             "atencion": 0
         },
         "H": {
-            "espera": 13,
-            "atencion": 1
-        },
-        "AE": {
-            "espera": 0,
-            "atencion": 0
-        },
-        "total": {
-            "espera": 13,
-            "atencion": 1,
-            "cola": 14,
-            "timestamp": "2025-11-04 07:48:54"
-        }
-    },
-    "Campin": {
-        "G": {
-            "espera": 1,
-            "atencion": 4
-        },
-        "H": {
-            "espera": 11,
-            "atencion": 3
+            "espera": 12,
+            "atencion": 2
         },
         "AE": {
             "espera": 0,
@@ -34,9 +14,29 @@
         },
         "total": {
             "espera": 12,
-            "atencion": 7,
-            "cola": 19,
-            "timestamp": "2025-11-04 07:48:54"
+            "atencion": 2,
+            "cola": 14,
+            "timestamp": "2025-11-04 07:50:27"
+        }
+    },
+    "Campin": {
+        "G": {
+            "espera": 2,
+            "atencion": 4
+        },
+        "H": {
+            "espera": 14,
+            "atencion": 2
+        },
+        "AE": {
+            "espera": 0,
+            "atencion": 0
+        },
+        "total": {
+            "espera": 16,
+            "atencion": 6,
+            "cola": 23,
+            "timestamp": "2025-11-04 07:50:27"
         }
     },
     "Kennedy": {
@@ -52,7 +52,7 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-11-04 07:48:54"
+            "timestamp": "2025-11-04 07:50:27"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 0
         },
         "H": {
-            "espera": 11,
+            "espera": 13,
             "atencion": 2
         },
         "total": {
-            "espera": 16,
+            "espera": 18,
             "atencion": 2,
-            "cola": 18,
-            "timestamp": "2025-11-04 07:48:54"
+            "cola": 20,
+            "timestamp": "2025-11-04 07:50:27"
         }
     }
 }
