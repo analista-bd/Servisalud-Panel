@@ -1,22 +1,22 @@
 {
     "116": {
         "G": {
-            "espera": 7,
-            "atencion": 1
+            "espera": 0,
+            "atencion": 0
         },
         "H": {
-            "espera": 23,
-            "atencion": 3
+            "espera": 0,
+            "atencion": 0
         },
         "AE": {
-            "espera": 4,
-            "atencion": 1
+            "espera": 0,
+            "atencion": 0
         },
         "total": {
-            "espera": 34,
-            "atencion": 5,
-            "cola": 40,
-            "timestamp": "2025-11-08 11:25:32"
+            "espera": 0,
+            "atencion": 0,
+            "cola": 0,
+            "timestamp": "2025-11-08 11:27:08"
         }
     },
     "Campin": {
@@ -25,18 +25,18 @@
             "atencion": 2
         },
         "H": {
-            "espera": 8,
-            "atencion": 5
+            "espera": 7,
+            "atencion": 6
         },
         "AE": {
-            "espera": 7,
+            "espera": 6,
             "atencion": 1
         },
         "total": {
-            "espera": 42,
-            "atencion": 8,
-            "cola": 119,
-            "timestamp": "2025-11-08 11:25:32"
+            "espera": 40,
+            "atencion": 9,
+            "cola": 117,
+            "timestamp": "2025-11-08 11:27:08"
         }
     },
     "Kennedy": {
@@ -52,7 +52,7 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-11-08 11:25:32"
+            "timestamp": "2025-11-08 11:27:08"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 0
         },
         "H": {
-            "espera": 1,
-            "atencion": 0
+            "espera": 0,
+            "atencion": 2
         },
         "total": {
-            "espera": 1,
-            "atencion": 0,
-            "cola": 1,
-            "timestamp": "2025-11-08 11:25:32"
+            "espera": 0,
+            "atencion": 2,
+            "cola": 3,
+            "timestamp": "2025-11-08 11:27:08"
         }
     }
 }
