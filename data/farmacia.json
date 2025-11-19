@@ -1,42 +1,42 @@
 {
     "116": {
         "G": {
-            "espera": 10,
+            "espera": 8,
             "atencion": 2
         },
         "H": {
-            "espera": 20,
-            "atencion": 3
+            "espera": 18,
+            "atencion": 2
         },
         "AE": {
-            "espera": 3,
+            "espera": 2,
             "atencion": 1
         },
         "total": {
-            "espera": 33,
-            "atencion": 6,
-            "cola": 39,
-            "timestamp": "2025-11-19 12:15:18"
+            "espera": 28,
+            "atencion": 5,
+            "cola": 32,
+            "timestamp": "2025-11-19 12:16:59"
         }
     },
     "Campin": {
         "G": {
-            "espera": 18,
+            "espera": 19,
             "atencion": 3
         },
         "H": {
-            "espera": 3,
-            "atencion": 3
+            "espera": 1,
+            "atencion": 4
         },
         "AE": {
             "espera": 19,
             "atencion": 4
         },
         "total": {
-            "espera": 40,
-            "atencion": 10,
-            "cola": 77,
-            "timestamp": "2025-11-19 12:15:18"
+            "espera": 39,
+            "atencion": 11,
+            "cola": 78,
+            "timestamp": "2025-11-19 12:16:59"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-11-19 12:15:18"
+            "timestamp": "2025-11-19 12:16:59"
         }
     },
     "Occidente": {
         "G": {
             "espera": 7,
-            "atencion": 0
+            "atencion": 1
         },
         "H": {
-            "espera": 7,
+            "espera": 8,
             "atencion": 1
         },
         "total": {
-            "espera": 14,
-            "atencion": 1,
-            "cola": 16,
-            "timestamp": "2025-11-19 12:15:18"
+            "espera": 15,
+            "atencion": 2,
+            "cola": 17,
+            "timestamp": "2025-11-19 12:16:59"
         }
     }
 }
