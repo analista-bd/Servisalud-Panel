@@ -2,41 +2,41 @@
     "116": {
         "G": {
             "espera": 3,
-            "atencion": 2
+            "atencion": 1
         },
         "H": {
-            "espera": 6,
+            "espera": 5,
             "atencion": 3
         },
         "AE": {
             "espera": 4,
-            "atencion": 1
+            "atencion": 0
         },
         "total": {
-            "espera": 13,
-            "atencion": 6,
-            "cola": 19,
-            "timestamp": "2025-11-25 12:40:36"
+            "espera": 12,
+            "atencion": 4,
+            "cola": 16,
+            "timestamp": "2025-11-25 12:42:11"
         }
     },
     "Campin": {
         "G": {
             "espera": 0,
-            "atencion": 2
+            "atencion": 1
         },
         "H": {
-            "espera": 0,
+            "espera": 1,
             "atencion": 1
         },
         "AE": {
-            "espera": 0,
+            "espera": 2,
             "atencion": 3
         },
         "total": {
-            "espera": 0,
-            "atencion": 6,
-            "cola": 6,
-            "timestamp": "2025-11-25 12:40:36"
+            "espera": 3,
+            "atencion": 5,
+            "cola": 9,
+            "timestamp": "2025-11-25 12:42:11"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-11-25 12:40:36"
+            "timestamp": "2025-11-25 12:42:11"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 12,
-            "atencion": 1
+            "espera": 8,
+            "atencion": 3
         },
         "H": {
             "espera": 20,
-            "atencion": 2
+            "atencion": 1
         },
         "total": {
-            "espera": 32,
-            "atencion": 3,
-            "cola": 35,
-            "timestamp": "2025-11-25 12:40:36"
+            "espera": 28,
+            "atencion": 4,
+            "cola": 33,
+            "timestamp": "2025-11-25 12:42:11"
         }
     }
 }
