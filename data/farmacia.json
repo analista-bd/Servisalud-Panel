@@ -1,31 +1,11 @@
 {
     "116": {
         "G": {
-            "espera": 3,
-            "atencion": 3
-        },
-        "H": {
-            "espera": 41,
-            "atencion": 3
-        },
-        "AE": {
             "espera": 0,
             "atencion": 1
         },
-        "total": {
-            "espera": 44,
-            "atencion": 7,
-            "cola": 50,
-            "timestamp": "2025-12-01 18:01:16"
-        }
-    },
-    "Campin": {
-        "G": {
-            "espera": 2,
-            "atencion": 5
-        },
         "H": {
-            "espera": 0,
+            "espera": 41,
             "atencion": 2
         },
         "AE": {
@@ -33,10 +13,30 @@
             "atencion": 1
         },
         "total": {
+            "espera": 41,
+            "atencion": 4,
+            "cola": 45,
+            "timestamp": "2025-12-01 18:02:51"
+        }
+    },
+    "Campin": {
+        "G": {
             "espera": 2,
-            "atencion": 8,
-            "cola": 12,
-            "timestamp": "2025-12-01 18:01:16"
+            "atencion": 3
+        },
+        "H": {
+            "espera": 1,
+            "atencion": 2
+        },
+        "AE": {
+            "espera": 0,
+            "atencion": 1
+        },
+        "total": {
+            "espera": 3,
+            "atencion": 6,
+            "cola": 10,
+            "timestamp": "2025-12-01 18:02:51"
         }
     },
     "Kennedy": {
@@ -52,12 +52,12 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-12-01 18:01:16"
+            "timestamp": "2025-12-01 18:02:51"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 5,
+            "espera": 4,
             "atencion": 3
         },
         "H": {
@@ -65,10 +65,10 @@
             "atencion": 2
         },
         "total": {
-            "espera": 16,
+            "espera": 15,
             "atencion": 5,
             "cola": 20,
-            "timestamp": "2025-12-01 18:01:16"
+            "timestamp": "2025-12-01 18:02:51"
         }
     }
 }
