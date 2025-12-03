@@ -1,42 +1,42 @@
 {
     "116": {
         "G": {
-            "espera": 3,
-            "atencion": 1
+            "espera": 2,
+            "atencion": 2
         },
         "H": {
-            "espera": 25,
+            "espera": 23,
             "atencion": 5
         },
         "AE": {
-            "espera": 11,
+            "espera": 10,
             "atencion": 1
         },
         "total": {
-            "espera": 39,
-            "atencion": 7,
-            "cola": 46,
-            "timestamp": "2025-12-03 15:05:07"
+            "espera": 35,
+            "atencion": 8,
+            "cola": 44,
+            "timestamp": "2025-12-03 15:06:46"
         }
     },
     "Campin": {
         "G": {
-            "espera": 4,
-            "atencion": 2
-        },
-        "H": {
-            "espera": 0,
-            "atencion": 5
-        },
-        "AE": {
             "espera": 2,
             "atencion": 4
         },
+        "H": {
+            "espera": 0,
+            "atencion": 4
+        },
+        "AE": {
+            "espera": 3,
+            "atencion": 4
+        },
         "total": {
-            "espera": 6,
-            "atencion": 11,
+            "espera": 5,
+            "atencion": 12,
             "cola": 17,
-            "timestamp": "2025-12-03 15:05:07"
+            "timestamp": "2025-12-03 15:06:46"
         }
     },
     "Kennedy": {
@@ -52,7 +52,7 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-12-03 15:05:07"
+            "timestamp": "2025-12-03 15:06:46"
         }
     },
     "Occidente": {
@@ -61,14 +61,14 @@
             "atencion": 0
         },
         "H": {
-            "espera": 23,
-            "atencion": 0
+            "espera": 22,
+            "atencion": 1
         },
         "total": {
-            "espera": 24,
-            "atencion": 0,
+            "espera": 23,
+            "atencion": 1,
             "cola": 24,
-            "timestamp": "2025-12-03 15:05:07"
+            "timestamp": "2025-12-03 15:06:46"
         }
     }
 }
