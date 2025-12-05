@@ -2,41 +2,41 @@
     "116": {
         "G": {
             "espera": 11,
-            "atencion": 2
+            "atencion": 1
         },
         "H": {
-            "espera": 32,
-            "atencion": 4
+            "espera": 34,
+            "atencion": 3
         },
         "AE": {
             "espera": 0,
             "atencion": 1
         },
         "total": {
-            "espera": 43,
-            "atencion": 7,
-            "cola": 82,
-            "timestamp": "2025-12-05 12:42:59"
+            "espera": 45,
+            "atencion": 5,
+            "cola": 80,
+            "timestamp": "2025-12-05 12:44:40"
         }
     },
     "Campin": {
         "G": {
-            "espera": 1,
+            "espera": 0,
             "atencion": 2
         },
         "H": {
-            "espera": 2,
-            "atencion": 2
+            "espera": 1,
+            "atencion": 3
         },
         "AE": {
-            "espera": 1,
+            "espera": 0,
             "atencion": 1
         },
         "total": {
-            "espera": 4,
-            "atencion": 5,
-            "cola": 8,
-            "timestamp": "2025-12-05 12:42:59"
+            "espera": 1,
+            "atencion": 6,
+            "cola": 7,
+            "timestamp": "2025-12-05 12:44:40"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-12-05 12:42:59"
+            "timestamp": "2025-12-05 12:44:40"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 6,
+            "espera": 7,
             "atencion": 1
         },
         "H": {
-            "espera": 24,
-            "atencion": 1
+            "espera": 23,
+            "atencion": 2
         },
         "total": {
             "espera": 30,
-            "atencion": 2,
-            "cola": 32,
-            "timestamp": "2025-12-05 12:42:59"
+            "atencion": 3,
+            "cola": 33,
+            "timestamp": "2025-12-05 12:44:40"
         }
     }
 }
