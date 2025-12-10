@@ -2,41 +2,41 @@
     "116": {
         "G": {
             "espera": 8,
-            "atencion": 3
+            "atencion": 4
         },
         "H": {
-            "espera": 15,
-            "atencion": 2
+            "espera": 13,
+            "atencion": 3
         },
         "AE": {
             "espera": 0,
-            "atencion": 1
+            "atencion": 0
         },
         "total": {
-            "espera": 23,
-            "atencion": 6,
-            "cola": 30,
-            "timestamp": "2025-12-10 12:43:25"
+            "espera": 21,
+            "atencion": 7,
+            "cola": 28,
+            "timestamp": "2025-12-10 12:45:02"
         }
     },
     "Campin": {
         "G": {
-            "espera": 5,
+            "espera": 4,
             "atencion": 4
         },
         "H": {
             "espera": 2,
-            "atencion": 6
+            "atencion": 5
         },
         "AE": {
-            "espera": 2,
+            "espera": 1,
             "atencion": 1
         },
         "total": {
-            "espera": 9,
-            "atencion": 11,
-            "cola": 21,
-            "timestamp": "2025-12-10 12:43:25"
+            "espera": 7,
+            "atencion": 10,
+            "cola": 17,
+            "timestamp": "2025-12-10 12:45:02"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-12-10 12:43:25"
+            "timestamp": "2025-12-10 12:45:02"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 2,
-            "atencion": 0
+            "espera": 1,
+            "atencion": 1
         },
         "H": {
             "espera": 0,
-            "atencion": 2
+            "atencion": 1
         },
         "total": {
-            "espera": 2,
+            "espera": 1,
             "atencion": 2,
-            "cola": 4,
-            "timestamp": "2025-12-10 12:43:25"
+            "cola": 3,
+            "timestamp": "2025-12-10 12:45:02"
         }
     }
 }
