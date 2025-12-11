@@ -1,42 +1,42 @@
 {
     "116": {
         "G": {
-            "espera": 2,
+            "espera": 3,
             "atencion": 0
         },
         "H": {
-            "espera": 7,
+            "espera": 8,
             "atencion": 0
         },
         "AE": {
-            "espera": 7,
-            "atencion": 0
+            "espera": 6,
+            "atencion": 1
         },
         "total": {
-            "espera": 16,
-            "atencion": 0,
-            "cola": 17,
-            "timestamp": "2025-12-11 12:23:31"
+            "espera": 17,
+            "atencion": 1,
+            "cola": 18,
+            "timestamp": "2025-12-11 12:25:07"
         }
     },
     "Campin": {
         "G": {
-            "espera": 1,
-            "atencion": 2
+            "espera": 0,
+            "atencion": 3
         },
         "H": {
-            "espera": 16,
+            "espera": 17,
             "atencion": 5
         },
         "AE": {
             "espera": 10,
-            "atencion": 2
+            "atencion": 3
         },
         "total": {
             "espera": 27,
-            "atencion": 9,
-            "cola": 36,
-            "timestamp": "2025-12-11 12:23:31"
+            "atencion": 11,
+            "cola": 37,
+            "timestamp": "2025-12-11 12:25:07"
         }
     },
     "Kennedy": {
@@ -52,23 +52,23 @@
             "espera": 0,
             "atencion": 0,
             "cola": 0,
-            "timestamp": "2025-12-11 12:23:31"
+            "timestamp": "2025-12-11 12:25:07"
         }
     },
     "Occidente": {
         "G": {
-            "espera": 10,
+            "espera": 9,
             "atencion": 1
         },
         "H": {
-            "espera": 2,
+            "espera": 1,
             "atencion": 2
         },
         "total": {
-            "espera": 12,
+            "espera": 10,
             "atencion": 3,
-            "cola": 15,
-            "timestamp": "2025-12-11 12:23:31"
+            "cola": 14,
+            "timestamp": "2025-12-11 12:25:07"
         }
     }
 }
